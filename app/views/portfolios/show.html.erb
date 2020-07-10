@@ -1,0 +1,8 @@
+<h1>Show page</h1>
+
+  <p><%= image_tag @portfolio.main_image if !@portfolio.main_image.nil? %></p>
+   <h2><%= @portfolio.title %></h2>
+    <h3><%= @portfolio.subtitle %></h3>
+    <p><%= @portfolio.body %></p>
+
+<%= link_to "Portfolios Home", portfolios_path %>
