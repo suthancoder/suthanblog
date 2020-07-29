@@ -8,4 +8,8 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def findquery
+    raise
+  end
 end
