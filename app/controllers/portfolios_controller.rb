@@ -2,7 +2,7 @@ class PortfoliosController < ApplicationController
   before_action :set_portfolio, only: [:show, :edit, :update, :destroy]
 
   def index
-    @portfolio_items = Portfolio.javascript
+    @portfolio_items = Portfolio.all
   end
 
   def new
