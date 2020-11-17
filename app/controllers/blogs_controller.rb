@@ -67,7 +67,7 @@ class BlogsController < ApplicationController
   end
 
   def missing
-    raise
+
   end
 
   private
