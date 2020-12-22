@@ -2,7 +2,7 @@
 
 <h1>Blogs</h1>
 
-
+<table>
   <thead>
     <tr>
       <th>Title</th>
@@ -12,9 +12,10 @@
     </tr>
   </thead>
 
-  <%= render @blogs %>
-
-
+  <tbody>
+    <%= render @blogs %>
+  </tbody>
 <br>
+</table>
 
 <%= link_to 'New Blog', new_blog_path %>
