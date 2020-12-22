@@ -25,6 +25,7 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
+    set_portfolio
   end
 
   def update
@@ -53,7 +54,7 @@ class PortfoliosController < ApplicationController
 private
 
   def set_portfolio
-      @portfolio = Portfolio.find(params[:id])
+      @portfolio_item = Portfolio.find(params[:id])
   end
 
   def portfolio_params
